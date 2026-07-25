@@ -83,3 +83,54 @@
 	position: absolute;
 	left: -9999px;
 }
+
+/*
+ * The vendor template hides all project titles/descriptions/links behind
+ * opacity:0 until :hover (see .portfolio-overlay / .portfolio-content in
+ * style.css) -- unusable on touch devices with no hover, and easy to miss
+ * even with a mouse. Override so the info panel sits below the tile and is
+ * always visible/clickable.
+ */
+.portfolio-box {
+	max-width: none;
+	margin-bottom: 30px;
+	background: #1b1f27;
+	border-radius: 4px;
+}
+.portfolio-overlay {
+	position: static;
+	height: auto;
+	opacity: 1;
+	color: #fff;
+	background: #1b1f27;
+	padding: 22px 25px;
+}
+.portfolio-overlay h3 {
+	color: #fff;
+	margin: 0 0 10px;
+}
+.portfolio-content {
+	position: static;
+	padding: 0;
+}
+.portfolio-content * {
+	opacity: 1;
+	transform: none;
+}
+.portfolio-content .label {
+	color: #febf34;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+.portfolio-content p {
+	color: #c2c6cf;
+}
+.portfolio-content a {
+	color: #febf34;
+	font-weight: 600;
+}
+.portfolio-content a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
