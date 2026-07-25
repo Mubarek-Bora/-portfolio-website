@@ -65,6 +65,12 @@
 	font-weight: 700;
 	color: rgba(255,255,255,0.85);
 	transition: all 1.2s;
+	background: #1b1f27;
+}
+/* Real screenshots (img instead of a colored initials div) */
+img.portfolio-tile {
+	object-fit: cover;
+	object-position: top;
 }
 .portfolio-box:hover .portfolio-tile {
 	transform: scale(1.2);
