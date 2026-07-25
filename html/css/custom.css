@@ -18,7 +18,11 @@
 .hero-static {
 	height: 100vh;
 	min-height: 560px;
-	background: linear-gradient(135deg, #14161b 0%, #23262e 100%);
+	background:
+		linear-gradient(135deg, rgba(10,12,16,0.82) 0%, rgba(20,22,28,0.75) 100%),
+		url("../images/bg/hero-bg.jpg");
+	background-size: cover;
+	background-position: center;
 	display: flex;
 	align-items: center;
 }
@@ -96,6 +100,20 @@
 	margin-bottom: 30px;
 	background: #1b1f27;
 	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+}
+.portfolio-box figure {
+	margin: 0;
+}
+.portfolio-overlay {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.portfolio-content p:last-child {
+	margin-top: auto;
+	padding-top: 10px;
 }
 .portfolio-overlay {
 	position: static;
@@ -112,6 +130,9 @@
 .portfolio-content {
 	position: static;
 	padding: 0;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 }
 .portfolio-content * {
 	opacity: 1;
