@@ -1,152 +1,480 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mubarek Bora — Full-Stack Developer</title>
-  <meta name="description" content="Portfolio of Mubarek Bora, a full-stack developer building React/Node/AWS projects." />
-  <link rel="stylesheet" href="styles.css" />
+	<title>Mubarek Bora - Full-Stack Developer Portfolio</title>
+	<meta name="description" content="Portfolio of Mubarek Bora, a full-stack developer building React, Next.js, Node.js, and AWS/DevOps projects.">
+	<meta name="keywords" content="full-stack developer, react, next.js, node.js, aws, devops, portfolio">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Mubarek Bora">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<!-- favicon -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+	<!-- Google fonts -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap css-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Font awesome css-->
+	<link rel="stylesheet" href="css/iconfont.css">
+	<!-- Line icons css-->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Animations css-->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Style css-->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Responsive css-->
+	<link rel="stylesheet" href="css/custom.css">
+	<!-- Custom overrides -->
+	<script src="js/modernizr.min.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top">Mubarek Bora</a>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+	<div id="wrapper">
+		<!--preloader start-->
+		<div class="preloader-box">
+		<div class="preloader loading">
+			<span class="slice"></span>
+			<span class="slice"></span>
+			<span class="slice"></span>
+			<span class="slice"></span>
+			<span class="slice"></span>
+			<span class="slice"></span>
+		</div><!--/.preloader-->
+	</div><!--/.preloader-box-->
+		<!--preloader end-->
 
-  <main>
-    <section id="top" class="hero">
-      <div class="container">
-        <h1>Mubarek Bora</h1>
-        <p class="subtitle">Full-Stack Developer &mdash; React, Node.js, AWS &amp; DevOps</p>
-        <p class="hero-text">
-          I build and ship full-stack web applications end to end &mdash; from auth and databases
-          to CI/CD and cloud deployment.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="https://github.com/Mubarek-Bora" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </section>
+		<!--header start-->
+		<header id="header">
+			<nav class="navbar m-0">
+				<div class="container-fluid navigation-menu">
+					<div class="row">
+						<div class="col-sm-2 col-xs-7 navbar-header">
+							<span class="logobox">
+								<a id="logo" class="text-logo" href="#home">Mubarek Bora</a>
+							</span><!--/.logobox-->
+						</div>
+						<div class="navigation-row col-sm-10 col-xs-5">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu"><span class="menulines"></span></button>
+							<nav class="collapse navbar-collapse pull-right" id="mainmenu">
+								<ul class="nav navbar-nav scrollnav">
+									<li class="active"><a href="#home">Home</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#portfolio">Portfolio</a></li>
+									<li><a href="#skills">Skills</a></li>
+									<li><a href="#contact">Contact</a></li>
+									<li class="hire-btn header-btn"><a href="#contact"><i class="glyphicon glyphicon-user"></i> Hire me</a></li>
+								</ul>
+							</nav><!--/#mainmenu-->
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header><!--/#header-->
+		<!--header end-->
 
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Full-Stack Projects</h2>
-        <div class="project-grid">
+		<!--hero start-->
+		<div id="home">
+			<div class="banner-section section-dark hero-static">
+				<div class="slider-contentbox v-middle text-lg">
+					<div class="container">
+						<div class="row">
+							<div class="col col-sm-8 col-lg-7">
+								<div class="slider-content animate-me">
+									<h2>Full-Stack Developer</h2>
+									<p>I build and ship full-stack web applications end to end &mdash; React, Next.js, Node.js, PostgreSQL, and AWS/DevOps &mdash; from auth and databases to CI/CD and cloud deployment.</p>
+									<div class="btn-row">
+										<a href="#portfolio" class="btn">View Portfolio <span><i class="fa fa-chevron-right"></i></span></a>
+									</div>
+								</div><!--/.slider-content-->
+							</div>
+						</div>
+					</div><!--/.container-->
+				</div><!--/.slider-contentbox-->
+				<a href="#about" class="scroll-down"><img src="images/mouse.svg" alt=""> Scroll down</a>
+			</div><!--/.banner-section-->
+		</div><!--/#home-->
+		<!--hero end-->
 
-          <article class="project-card">
-            <h3>TaskFlow</h3>
-            <p>Kanban-style task/project tracker with JWT auth, refresh-token rotation, and Google/GitHub OAuth.</p>
-            <p class="tech">Next.js 16 &middot; TypeScript &middot; Tailwind CSS &middot; Prisma &middot; PostgreSQL</p>
-            <div class="project-links">
-              <a href="https://taskflow-rose-one.vercel.app" target="_blank" rel="noopener">Live site</a>
-              <a href="https://github.com/Mubarek-Bora/taskflow" target="_blank" rel="noopener">Source</a>
-            </div>
-          </article>
+		<div id="main">
+			<!--about section start-->
+			<div id="about" class="section about-section">
+				<div class="container">
+					<div class="title-block row text-center">
+						<div class="col col-md-6 col-md-push-3">
+							<div class="section-title">
+								<em class="font-weight-600">Who am i</em>
+								<h2>About me</h2>
+								<span class="hexagon-icon"><i></i></span>
+							</div><!--/.section-title-->
+							<p>Full-stack developer with hands-on experience building modern web applications using React, Next.js, TypeScript, Node.js, Express, PostgreSQL, and cloud technologies.</p>
+						</div>
+					</div><!--/.title-block-->
+					<div class="row">
+						<div class="col col-sm-6 col-lg-4">
+							<div class="profile-pic">
+								<div class="avatar-circle"><span>MB</span></div>
+							</div><!--/.profile-pic-->
+						</div><!--/.col-->
+						<div class="col col-sm-6 col-lg-4">
+							<div class="about-contentbox last-p-no-margin">
+								<h3 class="title-style">Professional Profile</h3>
+								<p class="font-secondary text-darkgray">I enjoy turning ideas into production-ready applications.</p>
+								<p>I'm a full-stack developer with hands-on experience building modern web applications using React, Next.js, TypeScript, Node.js, Express, and PostgreSQL. I enjoy turning ideas into production-ready applications while continuously expanding my skills in AWS, DevOps, and software engineering best practices.</p>
+							</div><!--/.about-contentbox-->
+						</div><!--/.col-->
+						<div class="col col-sm-12 col-lg-4">
+							<ul class="list list-style-01 m-b-40">
+								<li><strong>Name:</strong> Mubarek Bora</li>
+								<li><strong>Location:</strong> Seattle, WA</li>
+								<li><strong>Email:</strong> maol2ga@gmail.com</li>
+								<li><strong>GitHub:</strong> <a href="https://github.com/Mubarek-Bora" target="_blank" rel="noopener">Mubarek-Bora</a></li>
+							</ul><!--/.list-style-01-->
+							<div class="cta-row">
+								<a href="https://github.com/Mubarek-Bora/resume-node-app" target="_blank" rel="noopener" class="btn btn-icon btn-outline"><i class="glyphicon glyphicon-download-alt"></i>View Resume</a>
+								<a href="#contact" class="btn btn-icon"><i class="glyphicon glyphicon-user"></i>Hire Me</a>
+							</div><!--/.cta-row-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.container-->
+			</div><!--/.section-->
+			<!--about section end-->
 
-          <article class="project-card">
-            <h3>Olana Garage</h3>
-            <p>Full-stack shop management system for an auto garage &mdash; customers, vehicles, services, and orders with role-based access control and an automated test suite.</p>
-            <p class="tech">React &middot; Express &middot; MySQL &middot; JWT</p>
-            <div class="project-links">
-              <a href="https://abegarage-kappa.vercel.app" target="_blank" rel="noopener">Live site</a>
-              <a href="https://github.com/Mubarek-Bora/abegarage" target="_blank" rel="noopener">Source</a>
-            </div>
-          </article>
+			<!--experience section start-->
+			<div class="experience-section border-top-bottom animated-row">
+				<div class="row no-spacing-row">
+					<div class="col col-md-6 bg-black matchheightbox">
+						<div class="p-50">
+							<h3 class="title-style">Work Experience</h3>
+							<div class="experience-list">
+								<div class="experience-row clearfix animate" data-animate="fadeIn">
+									<div class="experience-col-left m-r-20 p-r-20">
+										<div class="experience-details overflowhidden font-secondary">
+											<span class="text-white">FedEx Express</span>
+											<strong class="text-uppercase text-primary">Cargo Screening Agent (Aviation Security)</strong>
+											<em class="years-duration font-primary">May 2023 &ndash; Present, Seattle, WA</em>
+										</div><!--/.experience-details-->
+									</div><!--/.experience-col-->
+									<p class="overflowhidden m-0">Performs aviation cargo screening to ensure compliance with TSA security regulations; inspects and verifies shipments while maintaining strict safety and security standards; collaborates with operations teams to ensure efficient cargo movement and on-time flight operations. Recognized with a Bravo Zulu Award for outstanding operational performance.</p>
+								</div><!--/.experience-row-->
+							</div><!--/.experience-list-->
+						</div>
+					</div><!--/.col-->
+					<div class="col col-md-6 bg-gray matchheightbox">
+						<div class="p-50">
+							<h3 class="title-style">Education</h3>
+							<div class="experience-list">
+								<div class="experience-row clearfix animate" data-animate="fadeIn">
+									<div class="experience-col-left m-r-20 p-r-20">
+										<div class="experience-details overflowhidden font-secondary">
+											<span>Bahir Dar University</span>
+											<strong class="text-uppercase text-black">Bachelor's Degree</strong>
+											<em class="years-duration font-primary text-lightgray">Bahir Dar, Ethiopia &middot; Graduated 2010</em>
+										</div><!--/.experience-details-->
+									</div><!--/.experience-col-->
+								</div><!--/.experience-row-->
+							</div><!--/.experience-list-->
+						</div>
+					</div><!--/.col-->
+				</div><!--/.row-->
+			</div><!--/.education-section-->
+			<!--experience section end-->
 
-          <article class="project-card">
-            <h3>Finance Tracker</h3>
-            <p>Full-stack expense tracker with accounts, categorized transactions, and a live spending-breakdown chart.</p>
-            <p class="tech">React &middot; Node.js &middot; Express &middot; JWT</p>
-            <div class="project-links">
-              <a href="https://expense-tracker-starter-ten.vercel.app" target="_blank" rel="noopener">Live site</a>
-              <a href="https://github.com/Mubarek-Bora/expense-tracker-starter" target="_blank" rel="noopener">Source</a>
-            </div>
-          </article>
+			<!--portfolio section start-->
+			<div id="portfolio" class="section portfolio-section animated-row">
+				<div class="container">
+					<div class="title-block row text-center">
+						<div class="col col-md-6 col-md-push-3">
+							<div class="section-title">
+								<em class="font-weight-600">What i did</em>
+								<h2>Portfolio</h2>
+								<span class="hexagon-icon"><i></i></span>
+							</div><!--/.section-title-->
+							<p>Full-stack projects I've built and shipped, plus a few earlier ones.</p>
+						</div><!--/.col-->
+					</div><!--/.title-block-->
 
-          <article class="project-card">
-            <h3>Renewal Radar</h3>
-            <p>Never get blindsided by an expiring domain or SSL certificate &mdash; live monitoring with threshold-based email alerts.</p>
-            <p class="tech">React &middot; Node.js &middot; Prisma &middot; PostgreSQL</p>
-            <div class="project-links">
-              <a href="https://renewal-radar-ivory.vercel.app" target="_blank" rel="noopener">Live site</a>
-              <a href="https://github.com/Mubarek-Bora/renewal-radar" target="_blank" rel="noopener">Source</a>
-            </div>
-          </article>
+					<h3 class="title-style portfolio-subheading">Full-Stack Projects</h3>
+					<div class="row portfolio-grid">
 
-          <article class="project-card">
-            <h3>Starbucks Clone DevOps Pipeline</h3>
-            <p>Next.js app deployed through a full CI/CD pipeline &mdash; containerized, orchestrated, scanned, and monitored.</p>
-            <p class="tech">Docker &middot; Kubernetes &middot; Jenkins &middot; SonarQube &middot; Trivy &middot; Terraform &middot; Prometheus/Grafana</p>
-            <div class="project-links">
-              <a href="https://github.com/Mubarek-Bora/amazon-prime-video-kubernetes" target="_blank" rel="noopener">Source</a>
-            </div>
-          </article>
+						<div class="col col-sm-6 col-lg-4">
+							<div class="portfolio-box">
+								<a class="portfolio-block">
+									<figure><div class="portfolio-tile tile-1">TF</div></figure>
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<span class="label">Next.js &middot; Prisma &middot; PostgreSQL</span>
+											<h3 class="title-style-01">TaskFlow</h3>
+											<p>Kanban-style task/project tracker with JWT auth, refresh-token rotation, and Google/GitHub OAuth.</p>
+											<p><a href="https://taskflow-rose-one.vercel.app" target="_blank" rel="noopener">Live</a> &nbsp;|&nbsp; <a href="https://github.com/Mubarek-Bora/taskflow" target="_blank" rel="noopener">Code</a></p>
+										</div><!--/.portfolio-content-->
+									</div><!--/.portfolio-overlay-->
+								</a><!--/.portfolio-block-->
+							</div><!--/.portfolio-box-->
+						</div><!--/.col-->
 
-        </div>
+						<div class="col col-sm-6 col-lg-4">
+							<div class="portfolio-box">
+								<a class="portfolio-block">
+									<figure><div class="portfolio-tile tile-2">OG</div></figure>
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<span class="label">React &middot; Express &middot; MySQL</span>
+											<h3 class="title-style-01">Olana Garage</h3>
+											<p>Full-stack shop management system with role-based auth and an automated test suite.</p>
+											<p><a href="https://abegarage-kappa.vercel.app" target="_blank" rel="noopener">Live</a> &nbsp;|&nbsp; <a href="https://github.com/Mubarek-Bora/abegarage" target="_blank" rel="noopener">Code</a></p>
+										</div><!--/.portfolio-content-->
+									</div><!--/.portfolio-overlay-->
+								</a><!--/.portfolio-block-->
+							</div><!--/.portfolio-box-->
+						</div><!--/.col-->
 
-        <h2 class="earlier-heading">Earlier Projects</h2>
-        <div class="project-grid">
+						<div class="col col-sm-6 col-lg-4">
+							<div class="portfolio-box">
+								<a class="portfolio-block">
+									<figure><div class="portfolio-tile tile-3">FT</div></figure>
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<span class="label">React &middot; Node.js</span>
+											<h3 class="title-style-01">Finance Tracker</h3>
+											<p>Expense tracker with JWT auth and a live spending-breakdown chart.</p>
+											<p><a href="https://expense-tracker-starter-ten.vercel.app" target="_blank" rel="noopener">Live</a> &nbsp;|&nbsp; <a href="https://github.com/Mubarek-Bora/expense-tracker-starter" target="_blank" rel="noopener">Code</a></p>
+										</div><!--/.portfolio-content-->
+									</div><!--/.portfolio-overlay-->
+								</a><!--/.portfolio-block-->
+							</div><!--/.portfolio-box-->
+						</div><!--/.col-->
 
-          <article class="project-card">
-            <h3>Amazon Clone</h3>
-            <p>An e-commerce web app replicating Amazon's features.</p>
-            <div class="project-links">
-              <a href="https://amazon-clone-2028.netlify.app" target="_blank" rel="noopener">Live site</a>
-              <a href="https://github.com/Mubarek-Bora/Amazon-clone-frontend" target="_blank" rel="noopener">Source</a>
-            </div>
-          </article>
+						<div class="col col-sm-6 col-lg-4">
+							<div class="portfolio-box">
+								<a class="portfolio-block">
+									<figure><div class="portfolio-tile tile-4">RR</div></figure>
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<span class="label">React &middot; Prisma &middot; PostgreSQL</span>
+											<h3 class="title-style-01">Renewal Radar</h3>
+											<p>Tracks SSL/domain expiry and emails alerts before they lapse.</p>
+											<p><a href="https://renewal-radar-ivory.vercel.app" target="_blank" rel="noopener">Live</a> &nbsp;|&nbsp; <a href="https://github.com/Mubarek-Bora/renewal-radar" target="_blank" rel="noopener">Code</a></p>
+										</div><!--/.portfolio-content-->
+									</div><!--/.portfolio-overlay-->
+								</a><!--/.portfolio-block-->
+							</div><!--/.portfolio-box-->
+						</div><!--/.col-->
 
-          <article class="project-card">
-            <h3>Evangadi Forum</h3>
-            <p>A community forum platform built with modern full-stack technologies.</p>
-            <div class="project-links">
-              <a href="https://evangadi-forum-2028.netlify.app" target="_blank" rel="noopener">Live site</a>
-              <a href="https://github.com/Mubarek-Bora/Evangadi-forum" target="_blank" rel="noopener">Source</a>
-            </div>
-          </article>
+						<div class="col col-sm-6 col-lg-4">
+							<div class="portfolio-box">
+								<a class="portfolio-block">
+									<figure><div class="portfolio-tile tile-5">SB</div></figure>
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<span class="label">Docker &middot; K8s &middot; Jenkins &middot; Terraform</span>
+											<h3 class="title-style-01">Starbucks Clone DevOps Pipeline</h3>
+											<p>Next.js app deployed through a full CI/CD pipeline &mdash; containerized, orchestrated, scanned, and monitored.</p>
+											<p><a href="https://github.com/Mubarek-Bora/amazon-prime-video-kubernetes" target="_blank" rel="noopener">Code</a></p>
+										</div><!--/.portfolio-content-->
+									</div><!--/.portfolio-overlay-->
+								</a><!--/.portfolio-block-->
+							</div><!--/.portfolio-box-->
+						</div><!--/.col-->
 
-          <article class="project-card">
-            <h3>Netflix Clone</h3>
-            <p>A Netflix-inspired web app with a dynamic homepage and video streaming features.</p>
-            <div class="project-links">
-              <a href="https://mubarek-bora.github.io/Netflix-Clone-2024" target="_blank" rel="noopener">Live site</a>
-              <a href="https://github.com/Mubarek-Bora/Netflix-Clone-2024" target="_blank" rel="noopener">Source</a>
-            </div>
-          </article>
+					</div><!--/.row-->
 
-        </div>
-      </div>
-    </section>
+					<h3 class="title-style portfolio-subheading">Earlier Projects</h3>
+					<div class="row portfolio-grid">
 
-    <section id="resume" class="section resume-section">
-      <div class="container">
-        <h2>Resume</h2>
-        <p>Full-stack developer experience across React, Node.js, and AWS.</p>
-        <a class="btn btn-primary" href="https://github.com/Mubarek-Bora/resume-node-app" target="_blank" rel="noopener">View Resume</a>
-      </div>
-    </section>
+						<div class="col col-sm-6 col-lg-4">
+							<div class="portfolio-box">
+								<a class="portfolio-block">
+									<figure><div class="portfolio-tile tile-6">AC</div></figure>
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<span class="label">React &middot; Node.js</span>
+											<h3 class="title-style-01">Amazon Clone</h3>
+											<p>An e-commerce web app replicating Amazon's features.</p>
+											<p><a href="https://amazon-clone-2028.netlify.app" target="_blank" rel="noopener">Live</a> &nbsp;|&nbsp; <a href="https://github.com/Mubarek-Bora/Amazon-clone-frontend" target="_blank" rel="noopener">Code</a></p>
+										</div><!--/.portfolio-content-->
+									</div><!--/.portfolio-overlay-->
+								</a><!--/.portfolio-block-->
+							</div><!--/.portfolio-box-->
+						</div><!--/.col-->
 
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <h2>Contact</h2>
-        <ul class="contact-list">
-          <li><a href="https://github.com/Mubarek-Bora" target="_blank" rel="noopener">GitHub: Mubarek-Bora</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
+						<div class="col col-sm-6 col-lg-4">
+							<div class="portfolio-box">
+								<a class="portfolio-block">
+									<figure><div class="portfolio-tile tile-7">EF</div></figure>
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<span class="label">Full-stack</span>
+											<h3 class="title-style-01">Evangadi Forum</h3>
+											<p>A community forum platform built with modern full-stack technologies.</p>
+											<p><a href="https://evangadi-forum-2028.netlify.app" target="_blank" rel="noopener">Live</a> &nbsp;|&nbsp; <a href="https://github.com/Mubarek-Bora/Evangadi-forum" target="_blank" rel="noopener">Code</a></p>
+										</div><!--/.portfolio-content-->
+									</div><!--/.portfolio-overlay-->
+								</a><!--/.portfolio-block-->
+							</div><!--/.portfolio-box-->
+						</div><!--/.col-->
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Mubarek Bora. All rights reserved.</p>
-    </div>
-  </footer>
+						<div class="col col-sm-6 col-lg-4">
+							<div class="portfolio-box">
+								<a class="portfolio-block">
+									<figure><div class="portfolio-tile tile-8">NC</div></figure>
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<span class="label">React &middot; JavaScript</span>
+											<h3 class="title-style-01">Netflix Clone</h3>
+											<p>A Netflix-inspired web app with a dynamic homepage and video streaming features.</p>
+											<p><a href="https://mubarek-bora.github.io/Netflix-Clone-2024" target="_blank" rel="noopener">Live</a> &nbsp;|&nbsp; <a href="https://github.com/Mubarek-Bora/Netflix-Clone-2024" target="_blank" rel="noopener">Code</a></p>
+										</div><!--/.portfolio-content-->
+									</div><!--/.portfolio-overlay-->
+								</a><!--/.portfolio-block-->
+							</div><!--/.portfolio-box-->
+						</div><!--/.col-->
+
+					</div><!--/.row-->
+				</div><!--/.container-->
+			</div><!--/.section-->
+			<!--portfolio section end-->
+
+			<!--skills section start-->
+			<div id="skills" class="section skills-section animated-row">
+				<div class="container container-small">
+					<div class="title-block row text-center">
+						<div class="col col-md-6 col-md-push-3">
+							<div class="section-title">
+								<em class="font-weight-600">What i know</em>
+								<h2>Skills</h2>
+								<span class="hexagon-icon"><i></i></span>
+							</div><!--/.section-title-->
+							<p>Core tools and technologies I use to build full-stack applications.</p>
+						</div><!--/.col-->
+					</div><!--/.title-block-->
+					<div class="row skills-row">
+						<div class="col col-sm-4 col-fifth animate" data-animate="fadeInUp">
+							<div class="skill-box">
+								<div class="chart" data-percent="90">
+									<span class="percent yellow-gradient"></span>
+								</div>
+								<span class="skill">JavaScript / TypeScript</span>
+							</div><!--/.skill-box-->
+						</div><!--/.col-->
+						<div class="col col-sm-4 col-fifth animate" data-animate="fadeInUp">
+							<div class="skill-box">
+								<div class="chart" data-percent="85">
+									<span class="percent red-gradient"></span>
+								</div>
+								<span class="skill">React / Next.js</span>
+							</div><!--/.skill-box-->
+						</div><!--/.col-->
+						<div class="col col-sm-4 col-fifth animate" data-animate="fadeInUp">
+							<div class="skill-box">
+								<div class="chart" data-percent="85">
+									<span class="percent blue-gradient"></span>
+								</div>
+								<span class="skill">Node.js / Express</span>
+							</div><!--/.skill-box-->
+						</div><!--/.col-->
+						<div class="col col-sm-4 col-fifth animate" data-animate="fadeInUp">
+							<div class="skill-box">
+								<div class="chart" data-percent="80">
+									<span class="percent green-gradient"></span>
+								</div>
+								<span class="skill">PostgreSQL / MySQL</span>
+							</div><!--/.skill-box-->
+						</div><!--/.col-->
+						<div class="col col-sm-4 col-fifth animate" data-animate="fadeInUp">
+							<div class="skill-box">
+								<div class="chart" data-percent="75">
+									<span class="percent purple-gradient"></span>
+								</div>
+								<span class="skill">AWS / DevOps</span>
+							</div><!--/.skill-box-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.container-->
+			</div><!--/.section-->
+			<!--skills section end-->
+
+			<!--contact section start-->
+			<div id="contact" class="contact-section">
+				<div class="row no-spacing-row">
+					<div class="col col-md-12">
+						<div class="contact-box text-black">
+							<div class="row">
+								<div class="col col-sm-6">
+									<div class="contact-info text-center">
+										<span class="contact-icon"><i class="icon-envelope"></i></span>
+										<h3 class="text-black">Email Me</h3>
+										<span><a href="mailto:maol2ga@gmail.com">maol2ga@gmail.com</a></span>
+									</div><!--/.contact-info-->
+								</div><!--/.col-->
+								<div class="col col-sm-6">
+									<div class="contact-info text-center">
+										<span class="contact-icon"><i class="icon-chat"></i></span>
+										<h3 class="text-black">Find Me</h3>
+										<span><a href="https://github.com/Mubarek-Bora" target="_blank" rel="noopener">github.com/Mubarek-Bora</a></span>
+									</div><!--/.contact-info-->
+								</div><!--/.col-->
+							</div><!--/.row-->
+							<form action="" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+								<input type="hidden" name="form-name" value="contact" />
+								<p class="hidden-honeypot"><label>Don't fill this out: <input name="bot-field" /></label></p>
+								<div class="row">
+									<div class="col col-sm-6">
+										<div class="input-field has-icon">
+											<i class="fa fa-user"></i>
+											<input type="text" required class="form-control" name="name" placeholder="Name">
+										</div><!--/.input-field-->
+									</div><!--/.col-->
+									<div class="col col-sm-6 col-xs-12">
+										<div class="input-field has-icon">
+											<i class="fa fa-envelope"></i>
+											<input type="email" required class="form-control" name="email" placeholder="Email">
+										</div><!--/.input-field-->
+									</div><!--/.col-->
+									<div class="col col-xs-12">
+										<div class="input-field has-icon">
+											<i class="fa fa-file-text"></i>
+											<textarea class="form-control" required name="message" placeholder="Your message"></textarea>
+										</div><!--/.input-field-->
+									</div><!--/.col-->
+									<div class="col col-xs-12">
+										<button type="submit" class="btn btn-dark">Submit</button>
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</form><!--/#contactform-->
+						</div><!--/.contact-box-->
+					</div><!--/.col-->
+				</div><!--/.row-->
+			</div><!--/.contact-section-->
+			<!--contact section end-->
+
+		</div><!--/#main-->
+		<!--footer start-->
+		<footer id="footer" class="bg-black">
+			<a href="#home" class="back-to-top yellow-gradient"><i class="fa fa-angle-up"></i></a>
+			<div class="container-fluid">
+				<div class="row v-middle-row footer-top-row">
+					<div class="col col-md-6 col-sm-6 footer-widget matchheightbox">
+						<div class="v-middle-row text-center">
+							<span class="text-md p-l-10 p-r-10">&copy; 2026 Mubarek Bora. All rights reserved.</span>
+						</div><!--/.v-middle-row-->
+					</div><!--/.col-->
+					<div class="col col-md-6 col-sm-6 footer-widget matchheightbox">
+						<ul class="social-icons list">
+							<li><a href="https://github.com/Mubarek-Bora" target="_blank" rel="noopener" title="GitHub"><i class="fa fa-github"></i></a></li>
+						</ul><!--/.social-icons-->
+					</div><!--/.col-->
+				</div><!--/.row-->
+			</div><!--/.container-fluid-->
+		</footer><!--/#footer-->
+		<!--footer end-->
+	</div><!--/#wrapper-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/jquery.easypiechart.min.js"></script>
+<script src="js/jquery.matchHeight-min.js"></script>
+<script src="js/general.js"></script>
 </body>
 </html>
