@@ -84,6 +84,7 @@ img.portfolio-tile {
 .tile-6 { background: linear-gradient(135deg, #6c7280, #40444f); }
 .tile-7 { background: linear-gradient(135deg, #40b3b3, #2a7a7a); }
 .tile-8 { background: linear-gradient(135deg, #b33f6c, #7a2947); }
+.tile-9 { background: linear-gradient(135deg, #7c4dcc, #2d1b45); }
 
 /* Netlify Forms honeypot field -- hidden from real visitors, catches bots */
 .hidden-honeypot {
